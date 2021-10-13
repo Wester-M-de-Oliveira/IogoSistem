@@ -122,6 +122,14 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Interfaces\IDAO.cs" />
+    <Compile Include="Models\Funcionario.cs" />
+    <Compile Include="Models\FuncionarioDAO.cs" />
+    <Compile Include="Views\FuncionarioFormWindow.xaml.cs">
+      <DependentUpon>FuncionarioFormWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FuncionarioListWindow.xaml.cs">
+      <DependentUpon>FuncionarioListWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\UsuarioFormWindow.xaml.cs">
       <DependentUpon>UsuarioFormWindow.xaml</DependentUpon>
     </Compile>
@@ -141,6 +149,14 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Views\FuncionarioFormWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\FuncionarioListWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\UsuarioFormWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
